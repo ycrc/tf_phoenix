@@ -1,0 +1,16 @@
+terraform {
+  required_providers {
+    openstack = {
+      source = "terraform-provider-openstack/openstack"
+      version = ">= 3.4.0"
+    }
+    cloudinit = {
+      source = "hashicorp/cloudinit"
+      version = ">= 2.3.7"
+    }
+    ansible = {
+      source = "ansible/ansible"
+      version = ">= 1.3.0"
+    }
+  }
+}
