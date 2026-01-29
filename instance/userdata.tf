@@ -3,6 +3,7 @@ locals {
     user                 = var.username
     hostname             = var.fqdn
     fqdn                 = var.fqdn
+    timezone             = "America/New_York"
     create_hostname_file = true
     disable_root         = true
     ssh_pwauth           = false
