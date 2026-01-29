@@ -14,3 +14,8 @@ terraform {
     }
   }
 }
+
+provider "openstack" {
+  auth_url    = "http://controller:5000/v3"
+  tenant_name = "YCRC"
+}
