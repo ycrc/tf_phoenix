@@ -1,5 +1,4 @@
 resource "openstack_compute_instance_v2" "vm" {
-  provider        = openstack.phoenix
   name            = "${var.is_test ? "TEST" : "INFRA"}_${var.fqdn}"
   image_name      = var.image
   flavor_name     = var.flavor

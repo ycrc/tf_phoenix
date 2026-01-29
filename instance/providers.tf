@@ -3,7 +3,6 @@ terraform {
     openstack = {
       source = "terraform-provider-openstack/openstack"
       version = ">= 3.4.0"
-      configuration_aliases = [ openstack.phoenix ]
     }
     cloudinit = {
       source = "hashicorp/cloudinit"
@@ -14,10 +13,4 @@ terraform {
       version = ">= 1.3.0"
     }
   }
-}
-
-provider "openstack" {
-  alias       = "phoenix"
-  auth_url    = "http://controller:5000/v3"
-  tenant_name = "YCRC"
 }
