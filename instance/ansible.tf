@@ -1,5 +1,6 @@
 resource "ansible_host" "vm" {
-  name = openstack_compute_instance_v2.vm.name
+  name   = openstack_compute_instance_v2.vm.name
+  groups = [var.is_test ? "development" : "production"]
 
   variables = {
     ansible_user = var.username,
