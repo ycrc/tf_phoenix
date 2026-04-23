@@ -18,7 +18,7 @@ variable "flavor" {
 variable "image" {
   type        = string
   description = "Image to use for virtual machine"
-  default     = "rhel-8.10"
+  default     = "rhel-9.6"
 }
 
 variable "security_groups" {
@@ -30,7 +30,7 @@ variable "security_groups" {
 variable "username" {
   type        = string
   description = "Username for the default user"
-  default     = "ansible"
+  default     = "cfgmgt"
 }
 
 variable "key_pair" {
